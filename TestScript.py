@@ -1,9 +1,8 @@
-#rock paper scissors programme written using GIT hub 
+#rock paper scissors programme written using Python + testing GIT hub accessibility  
 
 import random
 
 def rps(userChoice):
-    
     
     def computerInput():
         computerChoice = random.randint(0,2)
