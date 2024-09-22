@@ -4,6 +4,7 @@ import random
 
 def rps(userChoice):
     
+    
     def computerInput():
         computerChoice = random.randint(0,2)
         match computerChoice: 
@@ -13,7 +14,7 @@ def rps(userChoice):
                 return "p"
             case 2:
                 return "s"
-            
+
     def userInput():
         compChoice = computerInput()
 
@@ -38,5 +39,7 @@ def rps(userChoice):
                 case "r":
                     return "{} v {} - User Wins".format(compChoice,userChoice)
     
+    return userInput()
 
-        
+for i in range(1,10):
+    print(rps("r"))
