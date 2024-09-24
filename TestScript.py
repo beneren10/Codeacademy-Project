@@ -1,6 +1,9 @@
 #rock paper scissors programme written using Python + testing GIT hub accessibility  
 
 import random
+import re
+
+userChoice = "r"
 
 def rps(userChoice):
     
@@ -40,5 +43,19 @@ def rps(userChoice):
     
     return userInput()
 
-for i in range(1,10):
-    print(rps("r"))
+def countresults(num):
+    counter = 0 
+    for i in range(1,num):
+        x = rps(userChoice)
+        if ("User" in x):
+            counter += 1
+    return counter        
+
+
+    
+
+print(countresults(1000000))
+
+
+
+
